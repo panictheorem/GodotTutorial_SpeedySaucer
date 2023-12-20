@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://r3el3yxoqne8"]
+
+[ext_resource type="Texture2D" uid="uid://kg7g4h86rxis" path="res://Art/ufoRed.png" id="1_5xtt0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5eqoi"]
+radius = 14.8661
+
+[node name="Player" type="RigidBody2D"]
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5xtt0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5eqoi")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+drag_horizontal_enabled = true
